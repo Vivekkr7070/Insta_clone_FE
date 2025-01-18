@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import styles from "./CreatePostModal.module.css";
-import axios from "axios";
 import { createPost } from "../services/posts";
 import { AuthContext } from "../context/AuthContext";
 
