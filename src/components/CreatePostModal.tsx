@@ -8,10 +8,10 @@ interface Props {
   setPosts: React.Dispatch<React.SetStateAction<any[]>>; // Update posts list after creating a post
 }
 
-const CreatePostModal: React.FC<Props> = ({ onClose, setPosts }) => {
+const CreatePostModal: React.FC<Props> = ({ onClose }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [image, setImage] = useState<File | null>(null);
+  const [ setImage] = useState<File | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const { token } = useContext(AuthContext);
@@ -72,7 +72,7 @@ const CreatePostModal: React.FC<Props> = ({ onClose, setPosts }) => {
             <label>Image (optional)</label>
             <input
               type="file"
-              onChange={(e) => setImage(e.target.files?.[0] || null)}
+              // onChange={(e) => setImage(e.target.files?.[0] || null)}
             />
           </div>
           <div className={styles.formActions}>

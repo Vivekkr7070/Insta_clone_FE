@@ -85,7 +85,7 @@ const Home: React.FC = () => {
       </div>
       {showModal && (
         <CreatePostModal
-          onClose={() => setShowModal(false)} setPosts={function (value: React.SetStateAction<any[]>): void {
+          onClose={() => setShowModal(false)} setPosts={function (): void {
             throw new Error("Function not implemented.");
           } }        />
       )}

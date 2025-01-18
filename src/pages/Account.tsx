@@ -35,7 +35,7 @@ const Account: React.FC = () => {
     resolver: yupResolver(schema),
   });
 
-  const [IsSubmitting, setIsSubmitting] = useState<any>();
+  const [setIsSubmitting] = useState<any>();
 
   const navigate = useNavigate();
 
@@ -45,7 +45,7 @@ const Account: React.FC = () => {
       // Destructure data object to pass individual arguments
       const { username, email, password } = data;
       // Now calling registerUser with three separate arguments
-      const result = await registerUser(username, email, password);
+       await registerUser(username, email, password);
       // Handle success (redirect or show a success message)
       navigate("/login"); // Redirect after successful registration (example)
     } catch (error) {

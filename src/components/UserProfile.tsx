@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { getUserDetails, getSuggestions } from "../services/user";
+import { getUserDetails} from "../services/user";
 import profilePic from "../assets/download.jpg";
 
 interface Profile {
@@ -19,7 +19,7 @@ interface Suggestion {
 const UserProfile: React.FC = () => {
   const { userId, logout } = useContext(AuthContext); // Context with logout method
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [suggestions] = useState<Suggestion[]>([]);
 
   // Number formatter for formatting numbers with commas
   const numberFormatter = new Intl.NumberFormat("en-US");

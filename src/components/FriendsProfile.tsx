@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate} from "react-router-dom";
 import {
   checkIsFollowing,
   followUser,
@@ -10,7 +10,6 @@ import profilePic from "../assets/download.jpg";
 
 import Button from "./Button"; // Assuming you have a Button component
 import { AuthContext } from "../context/AuthContext";
-import axios from "axios";
 
 interface UserData {
   username: string;
