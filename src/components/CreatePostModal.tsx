@@ -11,7 +11,6 @@ interface Props {
 const CreatePostModal: React.FC<Props> = ({ onClose }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [ setImage] = useState<File | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const { token } = useContext(AuthContext);
@@ -33,7 +32,7 @@ const CreatePostModal: React.FC<Props> = ({ onClose }) => {
 
     try {
       setLoading(true);
-      const data = await createPost(title, content, token ?? "");
+       await createPost(title, content, token ?? "");
       onClose(); // Close the modal
     } catch (err: any) {
       console.error(err.message);
