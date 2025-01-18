@@ -1,0 +1,47 @@
+/* .home-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-section {
+    flex: 1;
+    max-width: 300px;
+}
+
+.feed-section {
+    flex: 3;
+}
+
+.messaging-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+} */
+
+/* Home.module.css */
+
+/* Home Page Container */
+.homeContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Profile Section Styling */
+.profileSection {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Feed Section Styling */
+.feedSection {
+    flex: 3;
+}
+
+/* Messaging Icon Styling */
+.messagingIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

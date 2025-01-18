@@ -1,0 +1,96 @@
+/* .account-page {
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #b73434;
+}
+
+.btn-outline-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-primary:hover {
+    color: #0056b3;
+} */
+
+
+
+/* Account.module.css */
+
+/* Account Page Styling */
+.accountPage {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    background-color: #b73434;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btnOutlinePrimary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: white;
+}
+
+.btnPrimary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.textPrimary {
+    color: #007bff;
+}
+
+.textPrimaryHover:hover {
+    color: #0056b3;
+}
+
+/* Form Error Styling */
+.invalidFeedback {
+    color: #dc3545;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.my4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mb3 {
+    margin-bottom: 1rem;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.textDecorationUnderline {
+    text-decoration: underline;
+}

@@ -1,0 +1,72 @@
+/* Page Container */
+.messagesPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9fafc;
+    padding: 20px;
+  }
+  
+  /* Back Button Styling */
+  .backButton {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Container for Messages Layout */
+  .messagesContainer {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  /* Friends Panel */
+  .friendsPanel {
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  /* Chat Panel */
+  .chatPanel {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: hidden;
+    position: relative;
+  }
+  
+  /* Placeholder for no selected friend */
+  .noFriendSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }  

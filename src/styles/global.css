@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.chat-area {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area .message {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-area .message.me {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.chat-area .message.them {
+  background-color: #f1f1f1;
+  color: #000;
+  align-self: flex-start;
+}

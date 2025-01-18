@@ -1,0 +1,35 @@
+/* Login.module.css */
+
+/* Login Page Styling */
+.loginPage {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    background-color: #604c4c;
+}
+
+/* Button Styling */
+.btnPrimary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Text Link Styling */
+.textPrimary {
+    color: #007bff;
+}
+
+.textPrimaryHover:hover {
+    color: #0056b3;
+}
+
+/* Error Message Styling */
+.alertDanger {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
