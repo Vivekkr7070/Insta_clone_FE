@@ -75,7 +75,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     if (token) {
-      const newSocket = io("http://localhost:6001", {
+      const newSocket = io("https://insta-clone-i8e1.onrender.com", {
         auth: { token },
         transports: ["websocket"],
         autoConnect: true,
